@@ -38,7 +38,7 @@ You can download the pre-packaged version directly from **[Releases](../../relea
 ---
 ## 🖼️Preview
 
-<img width="1269" height="816" alt="Screenshot 2026-09-05 150924" src="https://github.com/user-attachments/assets/2b1a4f06-345c-44f1-8d27-250272194831" />
+<img width="1269" height="816" alt="Screenshot 2026-09-05 150924" src="https://github.com/user-attachments/assets/c813bca8-5fef-40bf-b791-be51b795b776" />
 
 ---
 
