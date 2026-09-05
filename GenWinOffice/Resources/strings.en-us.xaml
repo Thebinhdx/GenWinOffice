@@ -1,0 +1,75 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+
+    <!-- Navigation -->
+    <sys:String x:Key="Nav_Home">Home</sys:String>
+    <sys:String x:Key="Nav_Scan">Scan System</sys:String>
+    <sys:String x:Key="Nav_Settings">Settings</sys:String>
+    <sys:String x:Key="Settings_Title">Settings</sys:String>
+    <sys:String x:Key="Settings_Subtitle">Manage application preferences and system configurations.</sys:String>
+    <sys:String x:Key="Settings_Language">Language</sys:String>
+    <sys:String x:Key="Settings_Language_Desc">Select your preferred display language for the interface</sys:String>
+
+    <!-- Home -->
+    <sys:String x:Key="Home_Tag">v1.4 Fluent Release</sys:String>
+    <sys:String x:Key="Home_Title">GenuineWinOffice Checker</sys:String>
+    <sys:String x:Key="Home_Subtitle">A tool for scanning and assessing the integrity of Windows and Microsoft Office activation status.</sys:String>
+    <sys:String x:Key="Home_StartScan">Start System Audit</sys:String>
+    <sys:String x:Key="Home_Features_Title">Key Features</sys:String>
+    <sys:String x:Key="Home_Feature1_Title">100% Safe &amp; Read-Only</sys:String>
+    <sys:String x:Key="Home_Feature1_Desc">Queries system data only. Does not modify, collect, or send any data anywhere.</sys:String>
+    <sys:String x:Key="Home_Feature2_Title">In-Depth License Audit</sys:String>
+    <sys:String x:Key="Home_Feature2_Desc">Replicates methods to detect KMS, HWID, KMS38, Ohook DLL patches, and KMS servers.</sys:String>
+    <sys:String x:Key="Home_Feature3_Title">Windows 10 / 11 Ready</sys:String>
+    <sys:String x:Key="Home_Feature3_Desc">Optimized specifically for Windows 10 (21H1+) and Windows 11 with a modern interface.</sys:String>
+    <sys:String x:Key="Home_Detection_Title">Supported Activation Methods</sys:String>
+    <sys:String x:Key="Home_KMS_Title">Online KMS Services</sys:String>
+    <sys:String x:Key="Home_KMS_Desc">Detects emulated KMS servers or automated renewal background tasks</sys:String>
+    <sys:String x:Key="Home_Ohook_Title">Ohook Office Patch (sppc.dll / osppc.dll)</sys:String>
+    <sys:String x:Key="Home_Ohook_Desc">Scans for patched dynamic-link libraries in the Microsoft Office installation directory.</sys:String>
+    <sys:String x:Key="Home_HWID_Title">HWID / Digital License &amp; KMS38</sys:String>
+    <sys:String x:Key="Home_HWID_Desc">Audits Massgrave HWID digital tickets and KMS38 licensing tokens</sys:String>
+    <sys:String x:Key="Home_Reg_Title">Registry Tampering &amp; OEM Keys</sys:String>
+    <sys:String x:Key="Home_Reg_Desc">Scans unauthorized registry modifications and OEM/Volume activation keys</sys:String>
+    <sys:String x:Key="Status_Supported">Supported</sys:String>
+    <sys:String x:Key="Status_InDev">In Development</sys:String>
+    <sys:String x:Key="Home_GitHub">GitHub Repository</sys:String>
+    <sys:String x:Key="Home_ScrollTop">Back to Top</sys:String>
+
+    <!-- Scan Page -->
+    <sys:String x:Key="Scan_HeaderTitle">License &amp; Activation Scan</sys:String>
+    <sys:String x:Key="Scan_HeaderSub">Deep system analysis to detect Crack tools, unauthorized KMS, and HWID Bypass.</sys:String>
+    <sys:String x:Key="Scan_BtnStart">Start Deep Scan</sys:String>
+    <sys:String x:Key="Scan_BtnExport">Export Report</sys:String>
+    <sys:String x:Key="Scan_NotScanned">Not scanned yet</sys:String>
+    <sys:String x:Key="Scan_StatusPending">Pending</sys:String>
+    <sys:String x:Key="Scan_MethodPending">Not analyzed</sys:String>
+    <sys:String x:Key="Scan_ConclusionTitle">System Status Unknown</sys:String>
+    <sys:String x:Key="Scan_ConclusionDefaultDetail">Click 'Start Deep Scan' above to analyze your Windows and Office activation integrity.</sys:String>
+    <sys:String x:Key="Scan_ConclusionPending">Awaiting Scan</sys:String>
+
+    <sys:String x:Key="Scan_WinCleanStatus">Genuine / Genuine License</sys:String>
+    <sys:String x:Key="Scan_WinCleanDetail">Windows is activated using an official retail or OEM key. No traces of crack tools found.</sys:String>
+    <sys:String x:Key="Scan_WinCrackStatus">Crack Detected</sys:String>
+    <sys:String x:Key="Scan_WinCrackDetail">Detected active KMS server, HWID bypass, or activation script traces on this system.</sys:String>
+    <sys:String x:Key="Scan_WinWarningStatus">Suspicious Traces</sys:String>
+    <sys:String x:Key="Scan_WinWarningDetail">Suspicious activation tools or background tasks were detected on your system.</sys:String>
+
+    <sys:String x:Key="Scan_OfficeNotInstalledStatus">Not Installed</sys:String>
+    <sys:String x:Key="Scan_OfficeNotInstalledDetail">Microsoft Office is not detected on this machine.</sys:String>
+    <sys:String x:Key="Scan_OfficeCleanDetail">Microsoft Office is clean with no unauthorized activation hooks or KMS servers.</sys:String>
+    <sys:String x:Key="Scan_OfficeCrackStatus">Crack Detected</sys:String>
+    <sys:String x:Key="Scan_OfficeCrackDetail">Detected Ohook DLL patch or emulated KMS server targeting Microsoft Office.</sys:String>
+
+    <sys:String x:Key="Scan_MethodCleanStatus">Clean System</sys:String>
+    <sys:String x:Key="Scan_MethodCleanDetail">No activation crack methods or unauthorized background services detected.</sys:String>
+
+    <sys:String x:Key="Scan_ConclusionSafeTitle">System is Clean &amp; Genuine</sys:String>
+    <sys:String x:Key="Scan_ConclusionSafeDetail">Your Windows and Office installations are fully legitimate and free of unauthorized bypass scripts.</sys:String>
+    <sys:String x:Key="Scan_ConclusionPass">PASS</sys:String>
+
+    <sys:String x:Key="Scan_ConclusionRiskTitle">Potential Activation Risk Detected</sys:String>
+    <sys:String x:Key="Scan_ConclusionRiskDetail">One or more unauthorized activation methods (KMS, Ohook, HWID bypass) were detected on your system.</sys:String>
+    <sys:String x:Key="Scan_ConclusionRisk">RISK</sys:String>
+</ResourceDictionary>
