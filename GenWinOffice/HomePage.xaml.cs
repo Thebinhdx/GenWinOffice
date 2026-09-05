@@ -29,7 +29,7 @@ public partial class HomePage : Page
 		{
 			Process.Start(new ProcessStartInfo
 			{
-				FileName = "https://github.com/Thebinhdx/GenuineWinOffice-Checker",
+				FileName = "https://github.com/Thebinhdx/GenWinOffice",
 				UseShellExecute = true
 			});
 		}
