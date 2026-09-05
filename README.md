@@ -64,6 +64,27 @@ git clone [https://github.com/thebinhdx/GenWinOffice.git](https://github.com/the
 
 3. Press `F5` to run debug or select `Build > Build Solution` (`Ctrl + Shift + B`) to compile the project.
 
+## 🤝 Contributors
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Thebinhdx">
+        <img src="https://github.com/Thebinhdx.png" width="80px;" alt="Thebinhdx"/><br />
+        <sub><b>Thebinhdx</b></sub>
+      </a><br />
+      👑 💻 🎨
+    </td>
+    <td align="center">
+      <a href="https://gemini.google.com">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" width="80px;" alt="Gemini AI"/><br />
+        <sub><b>Gemini AI (Google)</b></sub>
+      </a><br />
+      🤖 💻 🐛
+    </td>
+  </tr>
+</table>
+
 ## 📜 License
 
 This project is distributed under the [MIT License](LICENSE).
