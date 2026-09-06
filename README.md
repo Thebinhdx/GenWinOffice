@@ -29,7 +29,7 @@
 
 You can download the pre-packaged version directly from **[Releases](../../releases)**:
 
-1. Download the `GenWinOffice_Setup.exe` file.
+1. Download the `GenWinOffice.installer.x64.exe` file.
 
 2. Run the installer and follow the on-screen instructions.
 
