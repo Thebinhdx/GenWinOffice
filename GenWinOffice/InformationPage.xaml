@@ -1,0 +1,63 @@
+﻿<Page x:Class="GenWinOffice.InformationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+      Title="InformationPage">
+
+    <Grid>
+        <ScrollViewer Background="Transparent" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="24">
+
+                <!-- Phần Header Logo & Tên phần mềm -->
+                <StackPanel HorizontalAlignment="Center" Margin="0,20,0,40">
+                    <ui:SymbolIcon Symbol="ShieldCheckmark48" FontSize="80" Foreground="{DynamicResource ButtonPrimaryBackgroundBrush}" Margin="0,0,0,16"/>
+                    <TextBlock Text="GenWinOffice" FontSize="28" FontWeight="Bold" Foreground="{DynamicResource TextPrimaryBrush}" HorizontalAlignment="Center"/>
+                    <Border Background="{DynamicResource BadgeBackgroundBrush}" CornerRadius="4" Padding="8,4" HorizontalAlignment="Center" Margin="0,8,0,0">
+                        <TextBlock Text="Version 1.4.0.1 Fluent Release" Foreground="{DynamicResource TextPrimaryBrush}" FontSize="12" FontWeight="SemiBold" />
+                    </Border>
+                </StackPanel>
+
+                <!-- Khối thông tin chi tiết -->
+                <TextBlock Text="About" FontSize="18" FontWeight="SemiBold" Foreground="{DynamicResource TextPrimaryBrush}" Margin="0,0,0,14" />
+
+                <ui:CardControl Margin="0,0,0,8" Icon="{ui:SymbolIcon Info24}">
+                    <ui:CardControl.Header>
+                        <StackPanel>
+                            <TextBlock Text="Description" FontWeight="Bold" Foreground="{DynamicResource TextPrimaryBrush}" />
+                            <TextBlock Text="A tool for scanning and assessing the integrity of Windows and Microsoft Office activation status." Foreground="{DynamicResource TextDescriptionBrush}" FontSize="12" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </ui:CardControl.Header>
+                </ui:CardControl>
+
+                <ui:CardControl Margin="0,0,0,8" Icon="{ui:SymbolIcon Code24}">
+                    <ui:CardControl.Header>
+                        <StackPanel>
+                            <TextBlock Text="Open Source (GitHub)" FontWeight="Bold" Foreground="{DynamicResource TextPrimaryBrush}" />
+                            <TextBlock Text="Contribute or report issues at the official repository." Foreground="{DynamicResource TextDescriptionBrush}" FontSize="12" />
+                        </StackPanel>
+                    </ui:CardControl.Header>
+                    <ui:HyperlinkButton Content="Open GitHub" NavigateUri="https://github.com/thebinhdx/GenWinOffice" Icon="{ui:SymbolIcon Open24}"/>
+                </ui:CardControl>
+
+                <ui:CardControl Margin="0,0,0,8" Icon="{ui:SymbolIcon Book24}">
+                    <ui:CardControl.Header>
+                        <StackPanel>
+                            <TextBlock Text="MIT License" FontWeight="Bold" Foreground="{DynamicResource TextPrimaryBrush}" />
+                            <TextBlock Text="Open-source software license." Foreground="{DynamicResource TextDescriptionBrush}" FontSize="12" />
+                        </StackPanel>
+                    </ui:CardControl.Header>
+                </ui:CardControl>
+
+                <ui:CardControl Icon="{ui:SymbolIcon Person24}">
+                    <ui:CardControl.Header>
+                        <StackPanel>
+                            <TextBlock Text="Copyright" FontWeight="Bold" Foreground="{DynamicResource TextPrimaryBrush}" />
+                            <TextBlock Text="© 2026 GenWinOffice Project. | Thebinhdx &amp; Contributors" Foreground="{DynamicResource TextDescriptionBrush}" FontSize="12" />
+                        </StackPanel>
+                    </ui:CardControl.Header>
+                </ui:CardControl>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

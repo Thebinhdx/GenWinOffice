@@ -8,9 +8,30 @@ public partial class MainWindow : FluentWindow
 {
 	public MainWindow()
 	{
-		InitializeComponent();
-		base.Loaded += MainWindow_Loaded;
-	}
+        InitializeComponent();
+		                                                                              
+        // 1. Đọc cài đặt đã lưu
+        string savedTheme = string.IsNullOrEmpty(GenWinOffice.SettingsColor.Default.ThemeMode)
+            ? "SystemDefault"
+            : GenWinOffice.SettingsColor.Default.ThemeMode;
+
+        // 2. Áp dụng màu (Bắt buộc phải truyền 'this' để Window có màu nền, không bị trắng)
+        App.ApplyTheme(savedTheme, this);
+
+        // 3. Đợi giao diện sẵn sàng mới Load trang chủ và bật Watcher
+        this.Loaded += (s, e) =>
+        {
+            // PHỤC HỒI DÒNG NÀY ĐỂ HIỂN THỊ GIAO DIỆN CHÍNH
+            RootNavigation.Navigate(typeof(HomePage));
+
+            // Bật theo dõi màu Windows nếu dùng SystemDefault
+            if (savedTheme == "SystemDefault")
+            {
+                Wpf.Ui.Appearance.SystemThemeWatcher.Watch(this);
+            }
+        };
+
+    }
 
 	private void MainWindow_Loaded(object sender, RoutedEventArgs e)
 	{

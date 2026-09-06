@@ -27,4 +27,19 @@
     <Resource Include="Resources\strings.vi-vn.xaml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="SettingsColor.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SettingsColor.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="SettingsColor.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>SettingsColor.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
 </Project>

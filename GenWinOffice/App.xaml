@@ -5,7 +5,9 @@
         <ui:ThemesDictionary Theme="Dark" />
         <ui:ControlsDictionary />
         <ResourceDictionary Source="Resources/Strings.en-US.xaml" />
-      </ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/CustomColorsDark.xaml"/>
+                <ResourceDictionary Source="/Resources/CustomColorsLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
     </ResourceDictionary>
   </Application.Resources>
 </Application>

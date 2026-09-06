@@ -10,9 +10,12 @@
     <sys:String x:Key="Settings_Subtitle">Quản lý tùy chỉnh ứng dụng và cấu hình hệ thống.</sys:String>
     <sys:String x:Key="Settings_Language">Ngôn ngữ</sys:String>
     <sys:String x:Key="Settings_Language_Desc">Chọn ngôn ngữ hiển thị cho giao diện ứng dụng</sys:String>
+    <sys:String x:Key="Settings_Theme">Chủ đề ứng dụng</sys:String>
+    <sys:String x:Key="Settings_Theme_Desc">Chọn chủ đề ứng dụng cho giao diện</sys:String>
+    <sys:String x:Key="Nav_Information">About</sys:String>
 
     <!-- Home -->
-    <sys:String x:Key="Home_Tag">v1.4 Fluent Release</sys:String>
+    <sys:String x:Key="Home_Tag">v1.4.0.1 Fluent Release</sys:String>
     <sys:String x:Key="Home_Title">GenuineWinOffice Checker</sys:String>
     <sys:String x:Key="Home_Subtitle">Công cụ kiểm tra và đánh giá tính toàn vẹn của bản quyền Windows và Microsoft Office.</sys:String>
     <sys:String x:Key="Home_StartScan">Bắt đầu kiểm tra</sys:String>

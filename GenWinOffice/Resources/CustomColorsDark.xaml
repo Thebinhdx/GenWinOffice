@@ -1,0 +1,26 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<!-- TEXT -->
+	<SolidColorBrush x:Key="TextPrimaryBrush" Color="#FFFFFFFF" />
+	<SolidColorBrush x:Key="TextSecondaryBrush" Color="#B0B0B0" />
+	<SolidColorBrush x:Key="TextTertiaryBrush" Color="#A0A0A0" />
+	<SolidColorBrush x:Key="TextDescriptionBrush" Color="#808080" />
+	<SolidColorBrush x:Key="TextBlackBrush" Color="#FF000000" />
+
+	<!-- BACKGROUND -->
+	<SolidColorBrush x:Key="CardBackgroundBrush" Color="#1E1E2E" />
+	<SolidColorBrush x:Key="HomeMainCardBackgroundBrush" Color="#1E1E2C" />
+	<SolidColorBrush x:Key="BadgeBackgroundBrush" Color="#2D2D3D" />
+	<SolidColorBrush x:Key="ButtonPrimaryBackgroundBrush" Color="#0078D4" />
+
+	<!-- BORDER -->
+	<SolidColorBrush x:Key="BorderDefaultBrush" Color="#2D2D3D" />
+	<SolidColorBrush x:Key="BorderHighlightBrush" Color="#3D3D5C" />
+
+	<!-- STATUS & ICON -->
+	<SolidColorBrush x:Key="StatusSupportedBackgroundBrush" Color="#1E382B" />
+	<SolidColorBrush x:Key="StatusSupportedTextBrush" Color="#4CAF50" />
+	<SolidColorBrush x:Key="StatusInDevBackgroundBrush" Color="#382B1E" />
+	<SolidColorBrush x:Key="StatusInDevTextBrush" Color="#FFC107" />
+	<SolidColorBrush x:Key="IconYellowBrush" Color="#FFB900" />
+</ResourceDictionary>

@@ -1,0 +1,26 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<!-- TEXT (Chữ thành đen/xám đậm) -->
+	<SolidColorBrush x:Key="TextPrimaryBrush" Color="#FF000000" />
+	<SolidColorBrush x:Key="TextSecondaryBrush" Color="#505050" />
+	<SolidColorBrush x:Key="TextTertiaryBrush" Color="#606060" />
+	<SolidColorBrush x:Key="TextDescriptionBrush" Color="#707070" />
+	<SolidColorBrush x:Key="TextBlackBrush" Color="#FF000000" />
+
+	<!-- BACKGROUND (Nền thành trắng/xám nhạt) -->
+	<SolidColorBrush x:Key="CardBackgroundBrush" Color="#F3F3F3" />
+	<SolidColorBrush x:Key="HomeMainCardBackgroundBrush" Color="#FFFFFF" />
+	<SolidColorBrush x:Key="BadgeBackgroundBrush" Color="#E5E5E5" />
+	<SolidColorBrush x:Key="ButtonPrimaryBackgroundBrush" Color="#0078D4" />
+
+	<!-- BORDER (Viền nhạt) -->
+	<SolidColorBrush x:Key="BorderDefaultBrush" Color="#D1D1D1" />
+	<SolidColorBrush x:Key="BorderHighlightBrush" Color="#B3B3B3" />
+
+	<!-- STATUS & ICON (Giữ nguyên hoặc chỉnh sáng hơn chút) -->
+	<SolidColorBrush x:Key="StatusSupportedBackgroundBrush" Color="#E8F5E9" />
+	<SolidColorBrush x:Key="StatusSupportedTextBrush" Color="#2E7D32" />
+	<SolidColorBrush x:Key="StatusInDevBackgroundBrush" Color="#FFF8E1" />
+	<SolidColorBrush x:Key="StatusInDevTextBrush" Color="#F57F17" />
+	<SolidColorBrush x:Key="IconYellowBrush" Color="#F57F17" />
+</ResourceDictionary>

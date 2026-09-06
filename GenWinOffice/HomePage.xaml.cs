@@ -23,21 +23,6 @@ public partial class HomePage : Page
 		}
 	}
 
-	private void BtnGithub_Click(object sender, RoutedEventArgs e)
-	{
-		try
-		{
-			Process.Start(new ProcessStartInfo
-			{
-				FileName = "https://github.com/Thebinhdx/GenWinOffice",
-				UseShellExecute = true
-			});
-		}
-		catch
-		{
-		}
-	}
-
 	private void Page_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
 	{
 		if (MainScrollViewer != null)

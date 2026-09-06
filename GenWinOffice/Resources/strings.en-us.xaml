@@ -10,9 +10,12 @@
     <sys:String x:Key="Settings_Subtitle">Manage application preferences and system configurations.</sys:String>
     <sys:String x:Key="Settings_Language">Language</sys:String>
     <sys:String x:Key="Settings_Language_Desc">Select your preferred display language for the interface</sys:String>
+    <sys:String x:Key="Settings_Theme">App Theme</sys:String>
+    <sys:String x:Key="Settings_Theme_Desc">Choose the app theme for the interface</sys:String>
+    <sys:String x:Key="Nav_Information">About</sys:String>
 
     <!-- Home -->
-    <sys:String x:Key="Home_Tag">v1.4 Fluent Release</sys:String>
+    <sys:String x:Key="Home_Tag">v1.4.0.1 Fluent Release</sys:String>
     <sys:String x:Key="Home_Title">GenuineWinOffice Checker</sys:String>
     <sys:String x:Key="Home_Subtitle">A tool for scanning and assessing the integrity of Windows and Microsoft Office activation status.</sys:String>
     <sys:String x:Key="Home_StartScan">Start System Audit</sys:String>

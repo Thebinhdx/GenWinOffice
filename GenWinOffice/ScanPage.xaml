@@ -1,106 +1,110 @@
 ﻿<Page x:Class="GenWinOffice.ScanPage" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" JournalEntry.KeepAlive="True" Title="ScanPage" xmlns:genwinoffice="clr-namespace:GenWinOffice;assembly=GenWinOffice" Loaded="Page_Loaded">
-  <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="25">
-    <StackPanel>
-      <TextBlock Text="{DynamicResource Scan_HeaderTitle}" Foreground="#FFFFFFFF" FontSize="20" FontWeight="Bold" Margin="0,0,0,5" />
-      <TextBlock Text="{DynamicResource Scan_HeaderSub}" Foreground="#A0A0A0" FontSize="13" Margin="0,0,0,20" />
-      <ProgressBar Name="ScanProgressBar" Height="4" IsIndeterminate="True" Visibility="Collapsed" Margin="0,0,0,15" />
-      <Grid Margin="0,0,0,20">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="*" />
-          <ColumnDefinition Width="15" />
-          <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions>
-        <Button Name="BtnStartScan" Content="{DynamicResource Scan_BtnStart}" Height="42" Background="#0078D4" Foreground="#FFFFFFFF" FontWeight="Bold" FontSize="14" BorderThickness="0" Click="BtnStartScan_Click">
-          <FrameworkElement.Resources>
-            <ResourceDictionary>
-              <Style x:Key="{x:Type Border}" TargetType="{x:Type Border}">
-                <Setter Property="Border.CornerRadius" Value="6" />
-              </Style>
-            </ResourceDictionary>
-          </FrameworkElement.Resources>
-        </Button>
-        <Button Name="BtnExport" Grid.Column="2" Content="{DynamicResource Scan_BtnExport}" IsEnabled="False" Height="42" Padding="20,0" Background="#2D2D3D" Foreground="#FFFFFFFF" FontWeight="SemiBold" FontSize="13" BorderThickness="1" BorderBrush="#3D3D5C" Click="BtnExport_Click">
-          <FrameworkElement.Resources>
-            <ResourceDictionary>
-              <Style x:Key="{x:Type Border}" TargetType="{x:Type Border}">
-                <Setter Property="Border.CornerRadius" Value="6" />
-              </Style>
-            </ResourceDictionary>
-          </FrameworkElement.Resources>
-        </Button>
-      </Grid>
-      <Border Background="#1E1E2E" CornerRadius="8" Padding="18" Margin="0,0,0,15" BorderThickness="1" BorderBrush="#2D2D3D">
-        <Grid>
-          <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="Auto" />
-          </Grid.ColumnDefinitions>
-          <StackPanel>
-            <StackPanel Orientation="Horizontal">
-              <TextBlock Text="💻 " FontSize="16" />
-              <TextBlock Text="{DynamicResource Scan_WinTitle}" Foreground="#FFFFFFFF" FontSize="15" FontWeight="Bold" />
-            </StackPanel>
-            <TextBlock Name="TxtWindowsDetail" Text="{DynamicResource Scan_NotScanned}" Foreground="#A0A0A0" Margin="0,6,0,0" />
-          </StackPanel>
-          <Border Name="BadgeWindows" Grid.Column="1" Background="#2D2D3D" CornerRadius="20" Padding="12,6" VerticalAlignment="Center">
-            <TextBlock Name="TxtWindowsStatus" Text="{DynamicResource Scan_StatusPending}" Foreground="#FFFFFFFF" FontSize="12" FontWeight="SemiBold" />
-          </Border>
-        </Grid>
-      </Border>
-      <Border Background="#1E1E2E" CornerRadius="8" Padding="18" Margin="0,0,0,15" BorderThickness="1" BorderBrush="#2D2D3D">
-        <Grid>
-          <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="Auto" />
-          </Grid.ColumnDefinitions>
-          <StackPanel>
-            <StackPanel Orientation="Horizontal">
-              <TextBlock Text="📊 " FontSize="16" />
-              <TextBlock Text="{DynamicResource Scan_OfficeTitle}" Foreground="#FFFFFFFF" FontSize="15" FontWeight="Bold" />
-            </StackPanel>
-            <TextBlock Name="TxtOfficeDetail" Text="{DynamicResource Scan_NotScanned}" Foreground="#A0A0A0" Margin="0,6,0,0" />
-          </StackPanel>
-          <Border Name="BadgeOffice" Grid.Column="1" Background="#2D2D3D" CornerRadius="20" Padding="12,6" VerticalAlignment="Center">
-            <TextBlock Name="TxtOfficeStatus" Text="{DynamicResource Scan_StatusPending}" Foreground="#FFFFFFFF" FontSize="12" FontWeight="SemiBold" />
-          </Border>
-        </Grid>
-      </Border>
-      <Border Background="#1E1E2E" CornerRadius="8" Padding="18" Margin="0,0,0,15" BorderThickness="1" BorderBrush="#2D2D3D">
-        <Grid>
-          <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="Auto" />
-          </Grid.ColumnDefinitions>
-          <StackPanel>
-            <StackPanel Orientation="Horizontal">
-              <TextBlock Text="📋 " FontSize="16" />
-              <TextBlock Text="{DynamicResource Scan_MethodTitle}" Foreground="#FFFFFFFF" FontSize="15" FontWeight="Bold" />
-            </StackPanel>
-            <TextBlock Name="TxtMethodDetail" Text="{DynamicResource Scan_NotScanned}" Foreground="#A0A0A0" Margin="0,6,0,0" TextWrapping="Wrap" LineHeight="20" />
-          </StackPanel>
-          <Border Name="BadgeMethod" Grid.Column="1" Background="#2D2D3D" CornerRadius="20" Padding="12,6" VerticalAlignment="Top">
-            <TextBlock Name="TxtMethodStatus" Text="{DynamicResource Scan_MethodPending}" Foreground="#FFFFFFFF" FontSize="12" FontWeight="SemiBold" />
-          </Border>
-        </Grid>
-      </Border>
-      <Border Name="CardConclusion" Background="#1E1E2E" CornerRadius="8" Padding="18" BorderThickness="1" BorderBrush="#3D3D5C">
-        <Grid>
-          <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="Auto" />
-          </Grid.ColumnDefinitions>
-          <StackPanel>
-            <StackPanel Orientation="Horizontal">
-              <TextBlock Text="🛡️ " FontSize="16" />
-              <TextBlock Name="TxtConclusionTitle" Text="{DynamicResource Scan_ConclusionTitle}" Foreground="#FFFFFFFF" FontSize="15" FontWeight="Bold" />
-            </StackPanel>
-            <TextBlock Name="TxtConclusionDetail" Text="{DynamicResource Scan_ConclusionDefaultDetail}" Foreground="#A0A0A0" Margin="0,6,0,0" TextWrapping="Wrap" LineHeight="20" />
-          </StackPanel>
-          <Border Name="BadgeConclusion" Grid.Column="1" Background="#2D2D3D" CornerRadius="20" Padding="14,6" VerticalAlignment="Center">
-            <TextBlock Name="TxtConclusionStatus" Text="{DynamicResource Scan_ConclusionPending}" Foreground="#FFFFFFFF" FontWeight="Bold" FontSize="12" />
-          </Border>
-        </Grid>
-      </Border>
-    </StackPanel>
-  </ScrollViewer>
+    <ScrollViewer Background="Transparent" VerticalScrollBarVisibility="Auto" Padding="25">
+        <StackPanel>
+            <TextBlock Text="{DynamicResource Scan_HeaderTitle}" Foreground="{DynamicResource TextPrimaryBrush}" FontSize="20" FontWeight="Bold" Margin="0,0,0,5" />
+            <TextBlock Text="{DynamicResource Scan_HeaderSub}" Foreground="{DynamicResource TextTertiaryBrush}" FontSize="13" Margin="0,0,0,20" />
+            <ProgressBar Name="ScanProgressBar" Height="4" IsIndeterminate="True" Visibility="Collapsed" Margin="0,0,0,15" />
+            <Grid Margin="0,0,0,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="15" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Button Name="BtnStartScan" Content="{DynamicResource Scan_BtnStart}" Height="42" Background="{DynamicResource ButtonPrimaryBackgroundBrush}" Foreground="{DynamicResource TextPrimaryBrush}" FontWeight="Bold" FontSize="14" BorderThickness="0" Click="BtnStartScan_Click">
+                    <FrameworkElement.Resources>
+                        <ResourceDictionary>
+                            <Style x:Key="{x:Type Border}" TargetType="{x:Type Border}">
+                                <Setter Property="Border.CornerRadius" Value="6" />
+                            </Style>
+                        </ResourceDictionary>
+                    </FrameworkElement.Resources>
+                </Button>
+                <Button Name="BtnExport" Grid.Column="2" Content="{DynamicResource Scan_BtnExport}" IsEnabled="False" Height="42" Padding="20,0" Background="{DynamicResource BadgeBackgroundBrush}" Foreground="{DynamicResource TextPrimaryBrush}" FontWeight="SemiBold" FontSize="13" BorderThickness="1" BorderBrush="{DynamicResource BorderHighlightBrush}" Click="BtnExport_Click">
+                    <FrameworkElement.Resources>
+                        <ResourceDictionary>
+                            <Style x:Key="{x:Type Border}" TargetType="{x:Type Border}">
+                                <Setter Property="Border.CornerRadius" Value="6" />
+                            </Style>
+                        </ResourceDictionary>
+                    </FrameworkElement.Resources>
+                </Button>
+            </Grid>
+
+            <Border Background="{DynamicResource CardBackgroundBrush}" CornerRadius="8" Padding="18" Margin="0,0,0,15" BorderThickness="1" BorderBrush="{DynamicResource BorderDefaultBrush}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="💻 " FontSize="16" />
+                            <TextBlock Text="{DynamicResource Scan_WinTitle}" Foreground="{DynamicResource TextPrimaryBrush}" FontSize="15" FontWeight="Bold" />
+                        </StackPanel>
+                        <TextBlock Name="TxtWindowsDetail" Text="{DynamicResource Scan_NotScanned}" Foreground="{DynamicResource TextTertiaryBrush}" Margin="0,6,0,0" />
+                    </StackPanel>
+                    <Border Name="BadgeWindows" Grid.Column="1" Background="{DynamicResource BadgeBackgroundBrush}" CornerRadius="20" Padding="12,6" VerticalAlignment="Center">
+                        <TextBlock Name="TxtWindowsStatus" Text="{DynamicResource Scan_StatusPending}" Foreground="{DynamicResource TextPrimaryBrush}" FontSize="12" FontWeight="SemiBold" />
+                    </Border>
+                </Grid>
+            </Border>
+
+            <Border Background="{DynamicResource CardBackgroundBrush}" CornerRadius="8" Padding="18" Margin="0,0,0,15" BorderThickness="1" BorderBrush="{DynamicResource BorderDefaultBrush}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="📊 " FontSize="16" />
+                            <TextBlock Text="{DynamicResource Scan_OfficeTitle}" Foreground="{DynamicResource TextPrimaryBrush}" FontSize="15" FontWeight="Bold" />
+                        </StackPanel>
+                        <TextBlock Name="TxtOfficeDetail" Text="{DynamicResource Scan_NotScanned}" Foreground="{DynamicResource TextTertiaryBrush}" Margin="0,6,0,0" />
+                    </StackPanel>
+                    <Border Name="BadgeOffice" Grid.Column="1" Background="{DynamicResource BadgeBackgroundBrush}" CornerRadius="20" Padding="12,6" VerticalAlignment="Center">
+                        <TextBlock Name="TxtOfficeStatus" Text="{DynamicResource Scan_StatusPending}" Foreground="{DynamicResource TextPrimaryBrush}" FontSize="12" FontWeight="SemiBold" />
+                    </Border>
+                </Grid>
+            </Border>
+
+            <Border Background="{DynamicResource CardBackgroundBrush}" CornerRadius="8" Padding="18" Margin="0,0,0,15" BorderThickness="1" BorderBrush="{DynamicResource BorderDefaultBrush}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="📋 " FontSize="16" />
+                            <TextBlock Text="{DynamicResource Scan_MethodTitle}" Foreground="{DynamicResource TextPrimaryBrush}" FontSize="15" FontWeight="Bold" />
+                        </StackPanel>
+                        <TextBlock Name="TxtMethodDetail" Text="{DynamicResource Scan_NotScanned}" Foreground="{DynamicResource TextTertiaryBrush}" Margin="0,6,0,0" TextWrapping="Wrap" LineHeight="20" />
+                    </StackPanel>
+                    <Border Name="BadgeMethod" Grid.Column="1" Background="{DynamicResource BadgeBackgroundBrush}" CornerRadius="20" Padding="12,6" VerticalAlignment="Top">
+                        <TextBlock Name="TxtMethodStatus" Text="{DynamicResource Scan_MethodPending}" Foreground="{DynamicResource TextPrimaryBrush}" FontSize="12" FontWeight="SemiBold" />
+                    </Border>
+                </Grid>
+            </Border>
+
+            <Border Name="CardConclusion" Background="{DynamicResource CardBackgroundBrush}" CornerRadius="8" Padding="18" BorderThickness="1" BorderBrush="{DynamicResource BorderHighlightBrush}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="🛡️ " FontSize="16" />
+                            <TextBlock Name="TxtConclusionTitle" Text="{DynamicResource Scan_ConclusionTitle}" Foreground="{DynamicResource TextPrimaryBrush}" FontSize="15" FontWeight="Bold" />
+                        </StackPanel>
+                        <TextBlock Name="TxtConclusionDetail" Text="{DynamicResource Scan_ConclusionDefaultDetail}" Foreground="{DynamicResource TextTertiaryBrush}" Margin="0,6,0,0" TextWrapping="Wrap" LineHeight="20" />
+                    </StackPanel>
+                    <Border Name="BadgeConclusion" Grid.Column="1" Background="{DynamicResource BadgeBackgroundBrush}" CornerRadius="20" Padding="14,6" VerticalAlignment="Center">
+                        <TextBlock Name="TxtConclusionStatus" Text="{DynamicResource Scan_ConclusionPending}" Foreground="{DynamicResource TextPrimaryBrush}" FontWeight="Bold" FontSize="12" />
+                    </Border>
+                </Grid>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
 </Page>
