@@ -57,7 +57,7 @@ You can download the pre-packaged version directly from **[Releases](../../relea
 
 ```bash
 
-git clone [https://github.com/thebinhdx/GenWinOffice.git](https://github.com/thebinhdx/GenWinOffice.git)
+git clone https://github.com/thebinhdx/GenWinOffice.git
 
 ```
 2. Open the `GenWinOffice.slnx` file using Visual Studio 2026.
